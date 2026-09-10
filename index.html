@@ -127,26 +127,46 @@
       <div class="contact-left"><p class="eyebrow">LET'S START A CONVERSATION</p><h2>다음 도전을 위한<br><em>연결을 기다립니다.</em></h2>
         <p class="contact-sub">채용 문의나 포트폴리오 피드백을 편하게 보내주세요.</p></div>
         <div class="contact-right">
-        <div class="contact-cards">
-        <div class="contact-card-large">
-        <div class="contact-icon-large">📧 
-        </div>
-        <div class="contact-info-large">
-        <span class="contact-label">Email</span>
-        <a href="mailto:hsoksy1@naver.com" class="contact-value-large">hsoksy1@naver.com</a></div>
-      </div>
-      
-        <div class="contact-card-large">
-        <div class="contact-icon-large">📱</div>
-        <div class="contact-info-large"><span class="contact-label">Phone</span>
-        <span class="contact-value-large">010.2678.2889</span></div>
-      </div>
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b085e730-9c4f-41c3-bc3f-9727c92b4482">
+          <input type="hidden" name="subject" value="포트폴리오 문의가 도착했습니다">
+          <input type="hidden" name="from_name" value="황상옥 포트폴리오">
+          <input type="checkbox" name="botcheck" class="form-honeypot" style="display:none">
 
-        <div class="contact-card-large">
-        <div class="contact-icon-large">📍</div>
-        <div class="contact-info-large"><span class="contact-label">GitHub</span>
-        <a href="https://hsohsh1111.netlify.app/" class="contact-value-large">hsohsh1111
-         </a></div></div></div></div></div><footer><span>© 2026 HWANG SANG OK</span><span>POWDER COATING R&amp;D</span></footer></section>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" name="name" id="formName" placeholder="이름" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="last_name" id="formLastName" placeholder="성">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" name="email" id="formEmail" placeholder="이메일 주소" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="title" id="formTitle" placeholder="문의 제목" required>
+          </div>
+
+          <div class="form-group">
+            <textarea name="message" id="formMessage" rows="6" placeholder="문의 내용을 입력해 주세요" required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary form-submit">
+            <span class="btn-label">문의 보내기</span>
+          </button>
+
+          <p class="form-result" id="formResult" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-cards contact-cards-compact">
+          <a href="mailto:hsoksy1@naver.com" class="contact-mini"><span>📧</span> hsoksy1@naver.com</a>
+          <span class="contact-mini"><span>📱</span> 010.2678.2889</span>
+          <a href="https://hsohsh1111.netlify.app/" class="contact-mini"><span>📍</span> hsohsh1111</a>
+        </div>
+        </div><footer><span>© 2026 HWANG SANG OK</span><span>POWDER COATING R&amp;D</span></footer></section>
   </main><script src="index.js"></script>
 </body>
 </html>

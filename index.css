@@ -629,6 +629,101 @@ body {
 .contact-value-large:hover {
   color: var(--lime);
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  color: #fff;
+  font-family: Manrope, "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  transition: border-color 0.2s, background 0.2s;
+  resize: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8b919b;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--lime);
+  background: rgba(255, 255, 255, 0.08);
+}
+.form-submit {
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.form-submit:hover {
+  transform: translateY(-2px);
+}
+.form-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+.form-result {
+  margin: 0;
+  font: 12px "DM Mono", monospace;
+  letter-spacing: 0.05em;
+  min-height: 16px;
+}
+.form-result.success {
+  color: var(--lime);
+}
+.form-result.error {
+  color: #ff8a65;
+}
+.contact-cards-compact {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c2c7ce;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.contact-mini:hover {
+  color: var(--lime);
+}
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
 .contact footer {
   margin-top: 80px;
   padding-top: 30px;
