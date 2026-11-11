@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '.hero .eyebrow': 'POWDER COATING R&D · TECHNICAL SERVICE',
     '.hero h1': 'Turning material potential<br>into <em>trusted products.</em>',
     '.hero-text': 'With extensive experience in powder coating R&D and technical service, I turn the potential of new formulations into reliable results on the production floor.',
-    '.hero-actions .button-primary': 'SELECTED RESULTS <span>↘</span>', '.hero-actions .text-link': 'CONTACT <span>→</span>',
+    '.hero-actions .button-primary:not(.project-link)': 'SELECTED RESULTS <span>↘</span>', '.hero-actions .project-link': 'VIEW PROJECT <span>↗</span>', '.hero-actions .text-link': 'CONTACT <span>→</span>',
     '.hero-photo img': { alt: 'Pigments in a range of powder coating colors' },
     '.hero-mark': { ariaLabel: 'More than 20 years of R&D and technical service experience' },
     '.about .section-label': '<span>01</span> PROFILE', '.about h2': 'A powder coating<br><em>specialist</em> close to the process',
